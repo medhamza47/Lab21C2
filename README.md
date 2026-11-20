@@ -30,7 +30,9 @@ java -jar service-car/target/service-car-1.0.0.jar
 ```
 
 Ouvrir le tableau de bord sur http://localhost:8761 et attendre l’apparition
-de `SERVICE-CLIENT` et `SERVICE-CAR`.
+de `SERVICE-CLIENT` et `SERVICE-CAR`. Les services annoncent `localhost` par
+défaut. En cas de déploiement sur plusieurs hôtes, définir
+`EUREKA_INSTANCE_HOSTNAME` pour chaque service avec son nom accessible.
 
 ## Scénario de validation
 
